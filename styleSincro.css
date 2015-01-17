@@ -1,0 +1,53 @@
+body{
+	width: 320px;
+	height: 568px;
+	background-image: url('fondo_movil_sincro.png');
+	background-repeat: no-repeat;
+	background-size: 320px 568px;	
+	padding: 2px;
+}
+
+
+fieldset{
+	border: 0 none;
+}
+
+input{
+	position: absolute;
+	top: 300px;
+	left: 75px;
+	height: 40px;
+	width: 170px;
+	border: 0 none;
+	font-size: 17px;
+	text-align: center;
+}
+
+legend{
+	position: absolute;
+	top: 260px;
+	left: 80px;
+	font-size: 19px;
+	font-family: arial;
+	font-weight: bold;
+	color: white;
+}
+
+#button{
+	position: absolute;
+	top: 370px;
+	left: 95px;
+	color: white;
+	padding:10px; 
+	border: 2px solid rgb(223, 117, 20);
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+	background: rgb(223, 117, 20); 
+	margin: 3px;
+	width: 115px;
+}
+
+#button:active{
+	border: 2px solid rgb(211, 84, 0);
+	background: rgb(211, 84, 0); 
+}
