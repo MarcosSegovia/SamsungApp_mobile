@@ -58,11 +58,11 @@
 
 
 body{
-	height: 320px;
-	width: 568px;
+	height: 640px;
+	width: 1024px;
 	background-image: url('img/pantalla_juego_movil.png');
 	background-repeat: no-repeat;
-	background-size: 568px 320px;	
+	background-size: 1024px 640px;	
 	padding: 2px;
 }
 
