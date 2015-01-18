@@ -9,6 +9,7 @@ $(document).ready(function(){
 		try {
 		webapis.multiscreen.Device.findByCode(pinCode, onFindByCodeSuccess, onError);
 		} catch(e) {
+			alert("Error exception, error code: " + e.code + ", error message : " + e.message);
 		    console.log("Error exception, error code: " + e.code + ", error message : " + e.message);
 		}
 	});
@@ -26,6 +27,7 @@ $(document).ready(function(){
 	}
 
 	function onError(e){
+		alert("error callback invoked " + e.name + ", " + e.message);
 		console.log("error callback invoked " + e.name + ", " + e.message);
 	}
 });
