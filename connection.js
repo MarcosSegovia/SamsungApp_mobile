@@ -1,25 +1,23 @@
 // globals
-var localDevice = null;
-var globalChannel;
+//var localDevice = null;
+//var globalChannel;
 
+$(document).ready(function(){  
+	$( "#btnSubmit" ).click(function() {
 
-$("#btnSubmit").click(function() {
+		pinCode = $('#inputPin').val();
 
-	alert("co");
-});
-/*
-webapis.multiscreen.Device.Device.getByCode(pinCode, new DeviceAsyncResult<localDevice>(){
-		
-		public void onResult(final Device device){
+		webapis.multiscreen.Device.findByCode(pinCode, onFindByCodeSuccess, error);
+	});
 
-			device.connectToChannel("com.mydomain.myapp.mychannel", {name:"MobileClient"}, function(channel) {
-				channel.on("message", function(msg, sender) {
-					console.log(sender.attributes.name + "Says : " + msg);
-				});
+	function onFindByCodeSuccess(device)
+	{
+		device.connectToChannel("com.mydomain.myapp.mychannel", {name:"MobileClient"}, function(channel) {
+
+			console.log('Connected to the TV !');
+			channel.on("message", function(msg, sender) {
+				console.log(sender.attributes.name + "Says : " + msg);
 			});
-		}
-		public void onError(DeviceError error)
-		{
-
-		}
-});*/
+		});
+	}
+});
