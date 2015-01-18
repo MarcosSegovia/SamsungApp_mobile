@@ -6,8 +6,11 @@ $(document).ready(function(){
 	$( "#btnSubmit" ).click(function() {
 
 		pinCode = $('#inputPin').val();
-
-		webapis.multiscreen.Device.findByCode(pinCode, onFindByCodeSuccess, error);
+		try {
+		webapis.multiscreen.Device.findByCode(pinCode, onFindByCodeSuccess, onError);
+		} catch(e) {
+		    console.log("Error exception, error code: " + e.code + ", error message : " + e.message);
+		}
 	});
 
 	function onFindByCodeSuccess(device)
@@ -22,7 +25,7 @@ $(document).ready(function(){
 		});
 	}
 
-	function error(){
-		alert("ERROR FINDING BY PIN!");
+	function onError(e){
+		console.log("error callback invoked " + e.name + ", " + e.message);
 	}
 });
