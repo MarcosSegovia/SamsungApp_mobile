@@ -2,61 +2,24 @@
 
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<link rel="stylesheet" type="text/css" href="style.css">
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="styleSincro.css">
 		<script type="text/javascript" src="multiscreen-mobile-1.1.14.min.js"></script>
-		<script language="javascript" type="text/javascript" src="main.js"></script>
+		<script type="text/javascript" src="connection.js"></script>
+		<script type="text/javascript" src="main.js"></script>
 	</head>
 
 	<body>
-		<section>
-			<button id="button1" class="select">SELECCIONAR</button>  
-			<button id="button" class="send extra2">ENVIAR</button>
-			<button id="button2" class="end	extra">ACABAR TURNO</button>
-			<img id="player_icon" src="img/j4.png">
-			
-		</section>
-
-		<div id="cardsrow1">
-			<!-- Fila de arriba. MAX 10 fichas -->
-			 <!-- <button>-->
-                    <img id="ficha1" class="ficha" src="img/blue1.png">
-                    <img id="ficha2" class="ficha" src="img/blue1.png">
-                    <img id="ficha3" class="ficha" src="img/blue1.png">
-                    <img id="ficha4" class="ficha" src="img/blue1.png">
-                    <img id="ficha5" class="ficha" src="img/blue1.png">
-                    <img id="ficha6" class="ficha" src="img/blue1.png">
-                    <img id="ficha7" class="ficha" src="img/blue1.png">
-                    <img id="ficha8" class="ficha" src="img/blue1.png">
-                    <img id="ficha9" class="ficha" src="img/blue1.png">
-                    <img id="ficha10" class="ficha" src="img/blue1.png">
-                    
-               
-			<!-- <button>-->
-			<!--<button mouseUp="focusCard();"><img id="ficha2" class="ficha" src="img/blue1.png"></button>
-			<button mouseUp="focusCard();"><img id="ficha3" class="ficha" src="img/blue1.png"></button>
-			<button mouseUp="focusCard();"><img id="ficha4" class="ficha" src="img/blue1.png"></button>-->
-			
-			
-		</div>
-
-		<div id="cardsrow2">
-			<!-- Fila de abajo. MAX 10 fichas-->
-		    <img id="ficha11" class="ficha" src="img/blue1.png">
-            <img id="ficha12" class="ficha" src="img/blue1.png">
-            <img id="ficha13" class="ficha" src="img/blue1.png">
-            <img id="ficha14" class="ficha" src="img/blue1.png">
-            <img id="ficha15" class="ficha" src="img/blue1.png">
-            <img id="ficha16" class="ficha" src="img/blue1.png">
-            <img id="ficha17" class="ficha" src="img/blue1.png">
-            <img id="ficha18" class="ficha" src="img/blue1.png">
-            <img id="ficha19" class="ficha" src="img/blue1.png">
-            <img id="ficha20" class="ficha" src="img/blue1.png">	
-			
-			
-		</div>
-
+		<form>
+			<fieldset>
+				<legend>Introduce el pin:</legend>
+				<input type="text" id="inputPin" name="inputPin">
+				<button id="buttonPin" class="send">ENVIAR</button>
+			</fieldset>
+		</form>
 	</body>
 
-
 </html>
+
+
+
+

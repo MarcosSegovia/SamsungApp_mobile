@@ -1,8 +1,6 @@
-// globals
-localDevice = null;
+
 
 $(function() {
-	console.log("FUCKER");
 	/*webapis.multiscreen.Device.search(function(devices) {
 	
 		console.log("num. devices = " + devices);
