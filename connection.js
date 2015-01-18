@@ -12,6 +12,7 @@ $(document).ready(function(){
 
 	function onFindByCodeSuccess(device)
 	{
+		alert("DEVICE FOUND!");
 		device.connectToChannel("com.mydomain.myapp.mychannel", {name:"MobileClient"}, function(channel) {
 
 			console.log('Connected to the TV !');
@@ -22,6 +23,6 @@ $(document).ready(function(){
 	}
 
 	function error(){
-		alert("fack");
+		alert("ERROR FINDING BY PIN!");
 	}
 });
