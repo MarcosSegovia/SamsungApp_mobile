@@ -33,7 +33,7 @@ legend{
 	color: white;
 }
 
-#buttonPin{
+#btnSubmit{
 	position: absolute;
 	top: 370px;
 	left: 95px;
@@ -47,7 +47,7 @@ legend{
 	width: 115px;
 }
 
-#buttonPin:active{
+#btnSubmit:active{
 	border: 2px solid rgb(211, 84, 0);
 	background: rgb(211, 84, 0); 
 }

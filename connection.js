@@ -2,7 +2,8 @@
 var localDevice = null;
 var globalChannel;
 
-$(#buttonPin).click(function() {
+
+$("#btnSubmit").click(function() {
 
 	alert("co");
 });
