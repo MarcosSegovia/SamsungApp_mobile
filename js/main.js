@@ -53,7 +53,12 @@ console.log("entra");
 		
 }
 */
+ channel.on("message", function(msg, client){
+	    	var message = JSON.parse(msg);
+	    	alert('AHIO !');
 
+	    	
+	    });
 
 
 
