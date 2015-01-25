@@ -1,4 +1,4 @@
-#button{
+#select_button{
 	color: white;
 	padding:20px; 
 	border: 2px solid rgb(223, 117, 20);
@@ -9,7 +9,7 @@
 	width: 260px;
 }
 
-#button:active{
+#select_button:active{
 	border: 2px solid rgb(211, 84, 0);
 	background: rgb(211, 84, 0); 
 }
@@ -70,14 +70,11 @@ body{
 .ficha{
 	width: 95px;
 	margin-right: 6px;
+	margin-bottom: 35px;
 }
 
-#cardsrow1 {
+#cardsrow{
 	margin-top: 102px;
-}
-
-#cardsrow2 {
-	margin-top: 37px;
 }
 
 #player_icon {
@@ -86,4 +83,10 @@ body{
 	top: 20px;
 	left: 120px;
 
+}
+
+#playerTurn{
+	position:absolute;
+	left: 380px;
+	top:150px;
 }
