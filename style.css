@@ -1,12 +1,12 @@
 #button{
 	color: white;
-	padding:10px; 
+	padding:20px; 
 	border: 2px solid rgb(223, 117, 20);
     border-radius: 4px;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 	background: rgb(223, 117, 20); 
 	margin: 3px;
-	width: 115px;
+	width: 260px;
 }
 
 #button:active{
@@ -14,34 +14,34 @@
 	background: rgb(211, 84, 0); 
 }
 
-#button1{
+#send_button{
 	color: white;
-	padding:10px; 
+	padding:20px; 
 	border: 2px solid rgb(223, 117, 20);
     border-radius: 4px;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 	background: rgb(223, 117, 20); 
 	margin: 3px;
-	width: 115px;
+	width: 260px;
 }
 
-#button1:active{
+#send_button:active{
 	border: 2px solid rgb(211, 84, 0);
 	background: rgb(211, 84, 0); 
 }
 
-#button2{
+#end_button{
 	color: white;
-	padding:10px; 
+	padding: 20px;
 	border: 2px solid rgb(231, 76, 60);
     border-radius: 4px;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 	background: rgb(231, 76, 60); 
 	margin: 3px;
-	width: 115px;
+	width: 260px;
 }
 
-#button2:active{
+#end_button:active{
 	border: 2px solid rgb(192, 57, 43);
 	background: rgb(192, 57, 43); 
 }
@@ -68,27 +68,22 @@ body{
 
 
 .ficha{
-	max-width: 47px;
-	max-height: 72px;
+	width: 95px;
+	margin-right: 6px;
 }
 
 #cardsrow1 {
-	position: absolute;
-	top: 132px;
-	left: 10px;
+	margin-top: 102px;
 }
 
 #cardsrow2 {
-	position: absolute;
-	top: 232px;
-	left: 10px;
+	margin-top: 37px;
 }
 
 #player_icon {
 	max-width: 60px;
-	max-height: 60px;
 	position: relative;
 	top: 20px;
-	left: 25px;
+	left: 120px;
 
 }
