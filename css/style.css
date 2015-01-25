@@ -60,7 +60,7 @@
 body{
 	height: 577px;
 	width: 1024px;
-	background-image: url(../img/pantalla_juego_movil.png);
+	background-image: url('img/pantalla_juego_movil.png');
 	background-repeat: no-repeat;
 	background-size: 1024px 577px;	
 	padding: 2px;

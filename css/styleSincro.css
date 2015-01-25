@@ -1,7 +1,7 @@
 body{
 	width: 320px;
 	height: 568px;
-	background-image: url(../img/fondo_movil_sincro.png);
+	background-image: url('img/fondo_movil_sincro.png');
 	background-repeat: no-repeat;
 	background-size: 320px 568px;	
 	padding: 2px;
